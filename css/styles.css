@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header styling */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(36, 61, 61);
+}
+
+/* Navbar link styling */
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navbar unordered list styling */
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+/* Navbar unordered list list-item styling*/
+.navbar ul li {
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+/* Logo styling */
+.site-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.site-main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgb(39, 134, 138);
+    border-radius: 25px;
+    color: white;
+}
+
+/* Events class styling (this is a container for our events) */
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+/* Individual event styling */
+.event {
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: black 1px solid;
+    max-width: 300px;
+}
+
+/* Individual event image styling */
+.event img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Grid Approach / Styling */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Flexbox Approach / Styling */
+.events-flexbox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(83, 161, 83);
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.button {
+    border-radius: 12px;
+    padding: 12px;
+    background-color: rgb(36, 201, 36);
+    border-width: 6px;
+    border-color: rgb(36, 201, 36);
+}
+
+/* Footer styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4px 0px;
+}
